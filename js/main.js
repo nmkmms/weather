@@ -4,13 +4,10 @@ let city;
 function success(pos) {
     var crd = pos.coords;
 
-    // console.log('Ваше текущее метоположение:');
     curr_latitude = crd.latitude;
     curr_longtitude = crd.longitude;
     console.log(curr_latitude);
     console.log(curr_longtitude);
-
-    // console.log(`Плюс-минус ${crd.accuracy} метров.`);
 };
 
 function error(err) {
@@ -21,7 +18,6 @@ navigator.geolocation.getCurrentPosition(success, error);
 
 jQuery(document).ready(function ($) {
     let weather_img;
-    // var city = geoplugin_city();
     console.log(curr_latitude);
     console.log(curr_longtitude);
     $.getJSON("http://api.openweathermap.org/data/2.5/weather",
