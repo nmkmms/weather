@@ -6,7 +6,8 @@ Especially I had troubles with this browser during developing.
 I advise to use Google Chrome while running it.
 ~~But I do not advise to use Chrome in other occasions:)~~
 
-Made by Vira Shulha and Ilya Koshmak as web-project in NaUKMA.
+Local Weather - practical project within the course JavaScript in Kyiv-Mohyla Academy.
+Made by Vira Shulha and Ilya Koshmak.
  
  
 **Docs:**

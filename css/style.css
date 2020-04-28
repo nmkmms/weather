@@ -1,5 +1,4 @@
 body {
-    /*background-image: url(../img/cloudy.jpg);*/
     background-size: 100%;
 }
 
@@ -22,7 +21,7 @@ body {
     position: center;
     text-align: center;
     display: inline-block;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .info-left {
