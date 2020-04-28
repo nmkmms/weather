@@ -1,6 +1,4 @@
 let curr_latitude, curr_longtitude;
-let city;
-let temp;
 
 function success(pos) {
     var crd = pos.coords;
@@ -19,12 +17,12 @@ navigator.geolocation.getCurrentPosition(success, error);
 
 jQuery(document).ready(function ($) {
     let weather_img;
-    // let background;
+    let background;
 
     console.log(curr_latitude);
     console.log(curr_longtitude);
 
-    // If didnt't get location
+    // If didnt't get location:
     if (curr_latitude == undefined || curr_longtitude == undefined) {
         location.reload();
     }
@@ -45,13 +43,13 @@ jQuery(document).ready(function ($) {
                 weather_img = 'scattered_clouds.png';
             } else if (weather == 'broken clouds') {
                 weather_img = 'broken_clouds.png';
-                // background = '/img/broken_clouds.jpg';
             } else if (weather == 'shower rain' || weather == 'light intensity drizzle'
                 || weather == 'drizzle' || weather == 'heavy intensity drizzle'
                 || weather == 'light intensity drizzle rain' || weather == 'drizzle rain'
                 || weather == 'heavy intensity drizzle rain' || weather == 'shower rain and drizzle'
                 || weather == 'heavy shower rain and drizzle' || weather == 'shower drizzle') {
                 weather_img = 'shower_rain.png';
+                background = '/img/rain.jpg';
             } else if (weather == 'rain' || weather == 'light rain' || weather == 'moderate rain'
                 || weather == 'heavy intensity rain' || weather == 'very heavy rain' || weather == 'extreme rain'
                 || weather == 'freezing rain' || weather == 'light intensity shower rain'
@@ -79,7 +77,7 @@ jQuery(document).ready(function ($) {
                 // background = '/img/partly_cloudy.gif';
             }
 
-            console.log(response);
+            // console.log(response);
 
 
             city = response.name;
@@ -94,6 +92,9 @@ jQuery(document).ready(function ($) {
             $("#feels").text(feels_like + "°C");
             $("#humidity").text(humidity + "%");
             $("#wind").text(winter_speed + " meter(s)/sec");
-            // document.body.style.backgroundImage = "url('" + background + "')";
+
+            if (background != undefined) {
+                $('body').css('background-image', "url(." + background + ")");
+            }
         });
 });
