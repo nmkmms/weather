@@ -1,0 +1,17 @@
+body {
+    background: url(../img/background.jpg);
+}
+
+.weather {
+    text-align: center;
+}
+
+.city-name {
+    text-align: center;
+}
+
+.row {
+    position: center;
+    text-align: center;
+    display: flex;
+}
