@@ -7,7 +7,7 @@ I advise to use Google Chrome while running it.
 ~~But I do not advise to use Chrome in other occasions:)~~
 
 Local Weather - practical project within the course JavaScript in Kyiv-Mohyla Academy.
-Made by Vira Shulha and Ilya Koshmak.
+Made by Vira Shulha and Illya Koshmak.
  
  
 **Docs:**
