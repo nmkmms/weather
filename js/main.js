@@ -23,6 +23,12 @@ jQuery(document).ready(function ($) {
 
     console.log(curr_latitude);
     console.log(curr_longtitude);
+
+    // If didnt't get location
+    if (curr_latitude == undefined || curr_longtitude == undefined) {
+        location.reload();
+    }
+
     $.getJSON("http://api.openweathermap.org/data/2.5/weather",
         {
             APPID: '75e828f2e97af9ff18fa7af9c61ab500',
