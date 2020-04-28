@@ -1,6 +1,6 @@
 body {
-    background-image: url(../img/background.jpg);
-    background-size: 100% 720px;
+    /*background-image: url(../img/cloudy.jpg);*/
+    background-size: 100%;
 }
 
 * {
@@ -30,7 +30,6 @@ body {
     float: left;
     text-align: left;
     margin-left: 5%;
-
     font-size: 20px;
 }
 
