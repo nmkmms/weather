@@ -80,12 +80,14 @@ jQuery(document).ready(function ($) {
             temp = Math.round((response.main.temp - 273.15) * 10) / 10;
             feels_like = Math.round((response.main.feels_like - 273.15) * 10) / 10;
             humidity = response.main.humidity;
+            winter_speed = response.wind.speed;
 
             $(".city-name").text('Weather in '+ city + ': ' + weather);
             $(".weather").append('<img src="img/'+ weather_img +'">');
             $("#temp").text( temp + "°C");
             $("#feels").text(feels_like + "°C");
             $("#humidity").text(humidity + "%");
+            $("#wind").text(winter_speed + " meter(s)/sec");
             // document.body.style.backgroundImage = "url('" + background + "')";
         });
 });

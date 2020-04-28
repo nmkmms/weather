@@ -22,7 +22,7 @@ body {
     position: center;
     text-align: center;
     display: inline-block;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .info-left {
@@ -38,8 +38,5 @@ body {
     width: 50%;
     float: right;
     text-align: right;
-    /*margin-top: 20%;*/
-    /*margin-right: 3%;*/
-    /*margin-left: 30%;*/
     font-size: 20px;
 }
