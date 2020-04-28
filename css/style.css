@@ -1,17 +1,45 @@
 body {
     background: url(../img/background.jpg);
+    background-size: 100% 720px;
 }
+
+* {
+    font-family: 'Bangers', cursive;
+}
+
 
 .weather {
     text-align: center;
 }
 
 .city-name {
+    margin-top: 50px;
     text-align: center;
 }
 
 .row {
+    width: 100%;
     position: center;
     text-align: center;
-    display: flex;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.info-left {
+    width: 45%;
+    float: left;
+    text-align: left;
+    margin-left: 5%;
+
+    font-size: 20px;
+}
+
+.info-right {
+    width: 50%;
+    float: right;
+    text-align: right;
+    /*margin-top: 20%;*/
+    /*margin-right: 3%;*/
+    /*margin-left: 30%;*/
+    font-size: 20px;
 }
