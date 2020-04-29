@@ -30,7 +30,7 @@ jQuery(document).ready(function ($) {
 
     $.getJSON("http://api.openweathermap.org/data/2.5/weather",
         {
-            APPID: '75e828f2e97af9ff18fa7af9c61ab500',
+            APPID: '204a0a93e530a3844b34bc92782045e7',
             lat: curr_latitude,
             lon: curr_longtitude
         },
