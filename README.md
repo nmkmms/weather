@@ -1,5 +1,7 @@
 **Local Weather**
 
+University project for Programming 2.2
+
 Don't run using Mozilla Firefox because it could not work because of it's bug with 
 detecting geolocation (see https://support.mozilla.org/en-US/kb/does-firefox-share-my-location-websites).
 Especially I had troubles with this browser during developing. 
